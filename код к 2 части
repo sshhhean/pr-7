@@ -1,0 +1,26 @@
+def task2():
+    size = 10
+    array_a = []
+    array_b = []
+
+    print("Введите элементы массива A:")
+    for i in range(size):
+        element = float(input(f"Элемент A[{i + 1}]: "))
+        array_a.append(element)
+
+    print("Введите элементы массива B:")
+    for i in range(size):
+        element = float(input(f"Элемент B[{i + 1}]: "))
+        array_b.append(element)
+
+    print("Исходный массив A:", array_a)
+    print("Исходный массив B:", array_b)
+
+    temp = array_a
+    array_a = array_b
+    array_b = temp
+
+    print("Преобразованный массив A:", array_a)
+    print("Преобразованный массив B:", array_b)
+
+task2()
